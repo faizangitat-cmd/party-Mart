@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Party Mart - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Mr. Party Mart Logo" class="logo-img">
+      <h1>Mr. Party Mart</h1>
+    </div>
+    <nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Mr. Party Mart</h2>
+    <p>Your one-stop shop for all party essentials, gifts, and decorations!</p>
+    <button class="shop-now">Shop Now</button>
+  </section>
+
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="gift1.jpg" alt="Gift Box" class="product-img">
+        <h3>Gift Box Set</h3>
+        <p>$19.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="balloons.jpg" alt="Party Balloons" class="product-img">
+        <h3>Party Balloons</h3>
+        <p>$9.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="decoration.jpg" alt="Party Decoration" class="product-img">
+        <h3>Party Decoration Kit</h3>
+        <p>$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p><strong>Phone:</strong> +1-800-PARTY-MART</p>
+      <p><strong>Email:</strong> support@mrpartymart.com</p>
+      <p><strong>Address:</strong> 123 Celebration Street, Party City, PC 12345</p>
+    </div>
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><span class="social-icon">f</span></a>
+        <a href="#" aria-label="Twitter"><span class="social-icon">t</span></a>
+        <a href="#" aria-label="Instagram"><span class="social-icon">i</span></a>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h3>Newsletter</h3>
+      <p>Subscribe for the latest party tips and offers!</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your Email" required>
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Mr. Party Mart. All rights reserved. | Designed with 🎉</p>
+  </div>
+</footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
